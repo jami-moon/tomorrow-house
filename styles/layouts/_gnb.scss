@@ -32,10 +32,6 @@
   }
 
   @include responsive(T) {
-    &-wrapper {
-      height: 80px;
-    }
-
     &-left {
       @include flexbox(start);
     }
@@ -49,7 +45,28 @@
         .gnb-icon-button {
           margin-right: 8px;
         }
+
+        .gnb-auth {
+          margin-left: 8px;
+
+          a {
+            @include text-style(14, $secondary);
+            font-weight: 700;
+
+            &:first-child {
+              margin-right: 12px;
+            }
+
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
       }
+    }
+
+    &-wrapper {
+      height: 80px;
     }
 
     .logo {
