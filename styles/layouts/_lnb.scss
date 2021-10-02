@@ -1,5 +1,9 @@
 .lnb {
-  overflow-x: scroll;
+  $lnb-link-padding: 8px;
+  $grid-margin: $sm-margin + $gutter / 2;
+
+  overflow-x: auto;
+  border-bottom: 1px solid $border;
 
   &::-webkit-scrollbar {
     display: none;
@@ -7,9 +11,11 @@
 
   &-list {
     @include inline-flexbox(start);
-    position: relative;
-    left: -8px;
+    height: 40px;
+    padding: 0 #{$gird-margin - $lnb-link-padding};
+    margin-left: -#{$grid-margin};
     white-space: nowrap;
+    border-bottom: 1px solid $border;
   }
 
   &-item {
@@ -17,7 +23,7 @@
       a {
         position: relative;
         color: $blue;
-        border-bottom: 2px solid $blue;
+        border-bottom-color: $blue;
       }
     }
   }
@@ -27,12 +33,8 @@
     @include text-style(13, $dark);
 
     height: 40px;
-    padding: 10px 8px;
+    padding: 0 $lnb-link-padding;
     font-weight: 700;
-    transition: color 200ms ease-in-out;
-  }
-
-  .ic-new {
-    color: $red;
+    border-bottom: 2px solid transparent;
   }
 }
