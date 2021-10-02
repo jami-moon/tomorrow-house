@@ -19,9 +19,9 @@
 
   @include responsive(T) {
     height: $gnb-height-md + $lnb-height-md;
-  }
 
-  .lnb {
-    top: $gnb-height-md;
+    .lnb {
+      top: $gnb-height-md;
+    }
   }
 }
