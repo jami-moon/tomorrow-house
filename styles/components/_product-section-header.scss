@@ -18,7 +18,7 @@
   .text-button,
   .icon-button {
     @include pos-center-y;
-    right: -#{$gird-margin};
+    right: -#{$grid-margin};
 
     &:active {
       opacity: 0.4;
@@ -27,14 +27,14 @@
 
   .text-button {
     @include text-style(14, $blue);
-    padding: $gird-margin;
+    padding: $grid-margin;
     font-weight: 700;
   }
 
   .icon-button {
     @include flexbox;
-    width: 22px + $gird-margin * 2;
-    height: 22px + $gird-margin * 2;
+    width: 22px + $grid-margin * 2;
+    height: 22px + $grid-margin * 2;
     font-size: 22px;
     color: $secondary;
 
