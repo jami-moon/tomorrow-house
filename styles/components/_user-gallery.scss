@@ -5,12 +5,12 @@
     margin-bottom: 4px;
   }
 
-  .thunmbnail-list {
+  .thumbnail-list {
     @include flexbox(start);
     padding-left: 2px;
   }
 
-  .thunmbnail-item {
+  .thumbnail-item {
     margin-right: 4px;
 
     &.tns-nav-active {
@@ -50,7 +50,7 @@
       padding-left: 0;
     }
 
-    .thunmbnail-item {
+    .thumbnail-item {
       button {
         width: 75px;
         height: 75px;
