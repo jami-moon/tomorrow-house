@@ -105,3 +105,11 @@ dist
 
 #Etc.
 style.css.map
+setting.json
+.prettierrc
+.stylelintignore
+.stylelintrc.json
+package-lock.json
+package.json
+review-card.md
+test.md
