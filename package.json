@@ -1,0 +1,31 @@
+{
+  "name": "tomorrow-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass": "node-sass -wr --source-map true styles/main.scss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jami-moon/tomorrow-house.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jami-moon/tomorrow-house/issues"
+  },
+  "homepage": "https://github.com/jami-moon/tomorrow-house#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-recess-order": "^2.5.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
