@@ -28,6 +28,12 @@
       color: $secondary;
       letter-spacing: -0.005em;
     }
+
+    &.is-active {
+      i {
+        color: $blue;
+      }
+    }
   }
 
   .btn-fill-primary {
