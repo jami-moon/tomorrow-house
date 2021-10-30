@@ -518,6 +518,7 @@
     "scss/no-duplicate-mixins": true,
     "scss/operator-no-unspaced": true,
     "scss/percent-placeholder-pattern": "^.[a-z]+(-[a-z0-9])*",
+    "scss/operator-no-newline-after": null,
     "declaration-block-trailing-semicolon": [
       "always",
       { "ignore": ["single-declaration"] }
