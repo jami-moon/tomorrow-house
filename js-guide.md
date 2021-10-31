@@ -18,4 +18,4 @@
 
 ### ~~9. 모바일 .order-cta에 구매하기 버튼 클릭 시 .order-form-modal에 is-open 클래스 추가~~
 
-### 10. 모달 외부영역 클릭 시에만 모달이 닫힐 수 있도록 설정하기(sidebar, .order-form-modal 등 닫기 버튼이 없는 모달에 적용)
+### ~~10. 모달 외부영역 클릭 시에만 모달이 닫힐 수 있도록 설정하기(sidebar, .order-form-modal 등 닫기 버튼이 없는 모달에 적용)~~

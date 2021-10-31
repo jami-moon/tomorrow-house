@@ -61,7 +61,9 @@ $menuBtn.addEventListener("click", () => {
   $sidebar.classList.add(IS_ACTIVE);
   $overlay.classList.add(IS_ACTIVE);
 
-  window.addEventListener("click", removeSidebar);
+  if ($sidebar.classList.contains(IS_ACTIVE)) {
+    window.addEventListener("click", removeSidebar);
+  }
 });
 
 function removeSidebar(e) {
