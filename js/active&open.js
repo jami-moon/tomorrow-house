@@ -105,6 +105,6 @@ function removeOrderModal(e) {
     $orderFormModal.classList.remove(IS_OPEN);
     $overlay.classList.remove(IS_ACTIVE);
     document.body.style.overflow = "visible";
-    window.removeEventListener("click", removeSidebar);
+    window.removeEventListener("click", removeOrderModal);
   }
 }
