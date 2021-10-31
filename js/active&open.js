@@ -60,7 +60,6 @@ $searchModalCloseBtn.addEventListener("click", () => {
 $menuBtn.addEventListener("click", () => {
   $sidebar.classList.add(IS_ACTIVE);
   $overlay.classList.add(IS_ACTIVE);
-  document.body.style.overflow = "hidden";
 
   window.addEventListener("click", removeSidebar);
 });
@@ -69,7 +68,6 @@ function removeSidebar(e) {
   if (e.target === $overlay) {
     $sidebar.classList.remove(IS_ACTIVE);
     $overlay.classList.remove(IS_ACTIVE);
-    document.body.style.overflow = "visible";
     window.removeEventListener("click", removeSidebar);
   }
 }
