@@ -7,7 +7,7 @@
 
   &-item {
     @include flexbox(start);
-    @include text-style(12px, $secondary);
+    @include text-style(12, $secondary);
     margin-bottom: 4px;
 
     &.is-active {
