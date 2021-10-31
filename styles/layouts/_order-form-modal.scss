@@ -3,7 +3,7 @@
   bottom: 0;
   left: 0;
   z-index: $order-form-modal-level;
-  display: none;
+  display: block;
   width: 100%;
   max-height: 75vh;
   padding-top: 16px;
@@ -12,11 +12,12 @@
   background-color: $white;
   border-radius: 12px 12px 0 0;
   box-shadow: $order-form-modal-shadow;
+  transition: transform 300ms ease-in-out;
+  transform: translate3d(0, 100%, 0);
 
   &.is-open {
     display: block;
-    animation-name: modal-fade-in;
-    animation-duration: 300ms;
+    transform: translate3d(0, 0, 0);
   }
 
   .order-checkouts,
@@ -39,19 +40,5 @@
     width: 100%;
     padding: 4px;
     background-color: $white;
-  }
-
-  @include responsive(T) {
-    padding-top: 32px;
-  }
-
-  @keyframes modal-fade-in {
-    0% {
-      transform: translate3d(0, 100%, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
   }
 }
