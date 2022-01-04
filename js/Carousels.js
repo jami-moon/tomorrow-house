@@ -1,3 +1,5 @@
+"use strict";
+
 const productCarousel = tns({
   container: ".product-carousel .slider-list",
   controls: false,
@@ -9,7 +11,7 @@ const productCarousel = tns({
   autoplayButtonOutput: false,
   mouseDrag: true,
   preventScrollOnTouch: true,
-})
+});
 
 const userGalleryMobile = tns({
   container: ".user-gallery.is-mobile .slider-list",
@@ -22,7 +24,7 @@ const userGalleryMobile = tns({
   arrowKeys: true,
   mouseDrag: true,
   preventScrollOnTouch: true,
-})
+});
 
 const userGalleryDesktop = tns({
   container: ".user-gallery.is-desktop .slider-list",
@@ -36,4 +38,4 @@ const userGalleryDesktop = tns({
   arrowKeys: true,
   mouseDrag: true,
   preventScrollOnTouch: true,
-})
+});

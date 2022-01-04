@@ -23,6 +23,7 @@ const $orderFormModal = document.querySelector(".order-form-modal");
 const IS_ACTIVE = `is-active`;
 const IS_OPEN = `is-open`;
 
+// 토글 클래스 이벤트핸들러
 function activeToggle(elementToBeChanged) {
   elementToBeChanged.classList.toggle(IS_ACTIVE);
 }
@@ -31,6 +32,7 @@ function openToggle(elementToBeChanged) {
   elementToBeChanged.classList.toggle(IS_OPEN);
 }
 
+// 검색창 이벤트리스너
 $searchInput.addEventListener("focus", () => {
   activeToggle($searchHistory);
 });
@@ -39,6 +41,7 @@ $searchInput.addEventListener("blur", () => {
   activeToggle($searchHistory);
 });
 
+// 마이 메뉴 이벤트리스너
 $myMenuBtn.addEventListener("focus", () => {
   activeToggle($myMenu);
 });
@@ -47,7 +50,8 @@ $myMenuBtn.addEventListener("blur", () => {
   activeToggle($myMenu);
 });
 
-$searchIcon.addEventListener("focus", () => {
+// 모바일 서치 모달 이벤트리스너 및 스크롤바 없애기
+$searchIcon.addEventListener("click", () => {
   activeToggle($searchModal);
   document.body.style.overflow = "hidden";
 });
@@ -57,6 +61,7 @@ $searchModalCloseBtn.addEventListener("click", () => {
   document.body.style.overflow = "visible";
 });
 
+// 모바일 사이드바 이벤트리스너 및 overlay
 $menuBtn.addEventListener("click", () => {
   $sidebar.classList.add(IS_ACTIVE);
   $overlay.classList.add(IS_ACTIVE);
@@ -74,6 +79,7 @@ function removeSidebar(e) {
   }
 }
 
+// 모바일 사이드바 대메뉴, 상세메뉴 이벤트리스너
 $sidebarMenu.forEach((target) => {
   target.addEventListener("click", () => {
     target.classList.toggle(IS_ACTIVE);
@@ -85,14 +91,17 @@ $contentBtn.addEventListener("click", () => {
   openToggle($productSpec);
 });
 
+// 모바일 문의 오픈
 $inquiryHeader.addEventListener("click", () => {
   $inquiry.classList.add(IS_OPEN);
 });
 
+// 모바일 배송 오픈
 $shipmentHeader.addEventListener("click", () => {
   $shipment.classList.add(IS_OPEN);
 });
 
+// 하단 CTA 이벤트리스너 및 overlay 추가
 $ctaOrderBtn.addEventListener("click", () => {
   $orderFormModal.classList.add(IS_OPEN);
   $overlay.classList.add(IS_ACTIVE);
